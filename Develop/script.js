@@ -11,7 +11,7 @@ function randomInt(min, max) {
 }
 
 function randomItem(list) {
-  return list[randomInt(list.length)]
+  return list[randomInt(0,list.length)]
 }
 
 function generatePassword() {
@@ -42,7 +42,7 @@ function generatePassword() {
 
   var optionsList = []
 
-  for (var i = 0; 1< lowercaseList.length; i++) {
+  for (var i = 0; i< lowercaseList.length; i++) {
     uppercaseList[1] - lowercaseList[1].toUpperCase()
   }
 
@@ -73,7 +73,7 @@ function generatePassword() {
     var randomChar = randomItem(randomList)
     generatePassword += randomChar
   }
-  console.log(generatePassword)
+  
 
   return generatePassword
 
